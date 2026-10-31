@@ -31,7 +31,7 @@ export default function Services({ content: services, staticUntil1440 = false }:
         {services.items.map((item, index) => (
           <Fragment key={item.title}>
             <span className={styles.line} data-hidden={index > 0 && active === index - 1} />
-            <article className={styles.row} data-active={active === index} onMouseEnter={() => setActive(index)}>
+            <article id={item.id} className={styles.row} data-active={active === index} onMouseEnter={() => setActive(index)}>
               <div className={styles.expanded}>
                 <Image src={services.background} alt="" fill sizes="100vw" quality={85} className={styles.background} />
                 <div className={styles.expandedInner}>

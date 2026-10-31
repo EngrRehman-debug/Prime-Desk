@@ -91,11 +91,26 @@
       "href": "/services"
     },
     "tags": [
-      "Digital Marketing",
-      "Web & Creative",
-      "Brand & Documentation",
-      "Business Support",
-      "Events & PR"
+      {
+        "label": "Digital Marketing",
+        "href": "/services#digital-marketing"
+      },
+      {
+        "label": "Web & Creative",
+        "href": "/services#web-creative"
+      },
+      {
+        "label": "Brand & Documentation",
+        "href": "/services#brand-documentation"
+      },
+      {
+        "label": "Business Support",
+        "href": "/services#business-support"
+      },
+      {
+        "label": "Events & PR",
+        "href": "/services#events-pr"
+      }
     ],
     "headlineLines": [
       "We become your",
@@ -211,7 +226,8 @@
           "Digital strategy, lead generation, and reporting"
         ],
         "category": "Service",
-        "contactOption": "Digital marketing"
+        "contactOption": "Digital marketing",
+        "id": "digital-marketing"
       },
       {
         "number": "02",
@@ -223,7 +239,8 @@
           "Graphic design and marketing collateral"
         ],
         "category": "Service",
-        "contactOption": "Web and creative"
+        "contactOption": "Web and creative",
+        "id": "web-creative"
       },
       {
         "number": "03",
@@ -237,7 +254,8 @@
           "Product and service documentation"
         ],
         "category": "Service",
-        "contactOption": "Brand and documentation"
+        "contactOption": "Brand and documentation",
+        "id": "brand-documentation"
       },
       {
         "number": "04",
@@ -249,7 +267,8 @@
           "Virtual assistant and day-to-day admin support"
         ],
         "category": "Service",
-        "contactOption": "Business support"
+        "contactOption": "Business support",
+        "id": "business-support"
       },
       {
         "number": "05",
@@ -264,7 +283,8 @@
           "Press releases and media relations"
         ],
         "category": "Service",
-        "contactOption": "Events and PR"
+        "contactOption": "Events and PR",
+        "id": "events-pr"
       }
     ]
   },

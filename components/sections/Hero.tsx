@@ -42,9 +42,9 @@ export default function Hero({ content: hero }: Props) {
             </div>
             <div className={styles.tags}>
               {hero.tags.map((tag) => (
-                <span key={tag} className={styles.tag}>
-                  {tag}
-                </span>
+                <a key={tag.label} href={tag.href} className={styles.tag}>
+                  {tag.label}
+                </a>
               ))}
             </div>
           </div>
