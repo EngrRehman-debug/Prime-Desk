@@ -2,10 +2,10 @@ import Image from "next/image";
 import Appear from "@/components/ui/Appear";
 import Counter from "@/components/ui/Counter";
 import StatementRow from "@/components/ui/StatementRow";
-import type page from "@/data/services-page.json";
+import type page from "@/data/pages.json";
 import styles from "./ServicesHero.module.css";
 
-type Props = { content: typeof page.hero };
+type Props = { content: typeof page.services.hero };
 
 function IconBadge({ src }: { src: string }) {
   return (

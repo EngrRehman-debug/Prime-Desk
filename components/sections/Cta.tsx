@@ -18,9 +18,11 @@ export default function Cta({ content: cta }: Props) {
         <Reveal delay={0.1}>
           <h2 className="h1">{cta.heading}</h2>
         </Reveal>
-        <Reveal delay={0.2}>
-          <p className={`body18 ${styles.description}`}>{cta.description}</p>
-        </Reveal>
+        {cta.description && (
+          <Reveal delay={0.2}>
+            <p className={`body18 ${styles.description}`}>{cta.description}</p>
+          </Reveal>
+        )}
         <Reveal delay={0.3} className={styles.button}>
           <Button href={cta.button.href} label={cta.button.label} />
         </Reveal>

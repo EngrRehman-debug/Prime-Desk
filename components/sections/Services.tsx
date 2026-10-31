@@ -32,7 +32,7 @@ export default function Services({ content: services, staticUntil1440 = false }:
           <Fragment key={item.title}>
             <span className={styles.line} data-hidden={index > 0 && active === index - 1} />
             <article className={styles.row} data-active={active === index} onMouseEnter={() => setActive(index)}>
-              <div className={styles.expanded} aria-hidden={active !== index}>
+              <div className={styles.expanded}>
                 <Image src={services.background} alt="" fill sizes="100vw" quality={85} className={styles.background} />
                 <div className={styles.expandedInner}>
                   <div className={styles.media}>
@@ -47,17 +47,13 @@ export default function Services({ content: services, staticUntil1440 = false }:
                         <p className={styles.category}>{item.category}</p>
                         <h3 className={styles.title}>{item.title}</h3>
                       </div>
-                      <Button href={services.cta.href} label={services.cta.label} />
+                      <Button href={`${services.cta.href}?service=${encodeURIComponent(item.contactOption)}`} label={services.cta.label} />
                     </div>
                     <div className={styles.summary}>
                       <div className={styles.projects}>
-                        <div className={styles.count}>
-                          <strong>{services.projectsValue}</strong>
-                          <span>{services.projectsLabel}</span>
-                        </div>
-                        <p className="body18">{services.projectsDescription}</p>
+                        <p className="body18">{item.summary}</p>
                       </div>
-                      <div className={styles.offerings}>
+                      <div className={styles.offerings} data-dense={item.offerings.length > 6}>
                         {item.offerings.map((offering) => (
                           <div key={offering} className={styles.offering}>
                             {offering}
@@ -76,7 +72,7 @@ export default function Services({ content: services, staticUntil1440 = false }:
                     <p className={styles.category}>{item.category}</p>
                     <h3 className={styles.title}>{item.title}</h3>
                   </div>
-                  <Button href={services.cta.href} label={services.cta.label} />
+                  <Button href={`${services.cta.href}?service=${encodeURIComponent(item.contactOption)}`} label={services.cta.label} />
                 </div>
               </div>
             </article>

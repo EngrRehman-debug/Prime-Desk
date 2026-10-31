@@ -12,8 +12,8 @@ export default function Footer({ content: footer }: Props) {
       <div className={styles.container}>
         <Reveal className={styles.top}>
           <div className={styles.brand}>
-            <a href="/" className={styles.logo} aria-label={footer.wordmark.alt}>
-              <Image src={footer.logo} alt="" fill unoptimized />
+            <a href="/" className={styles.logo}>
+              {footer.name}
             </a>
             <p>{footer.description}</p>
           </div>
@@ -29,7 +29,7 @@ export default function Footer({ content: footer }: Props) {
 
         <div className={styles.columns}>
           {footer.columns.map((column, index) => (
-            <Reveal key={column.title} delay={(index + 1) * 0.1} className={`${styles.column} ${"hideOnPhone" in column ? styles.hideOnPhone : ""}`}>
+            <Reveal key={column.title} delay={(index + 1) * 0.1} className={styles.column}>
               <p className={styles.columnTitle}>{column.title}</p>
               <ul className={styles.list}>
                 {column.links.map((link) => (
@@ -57,8 +57,21 @@ export default function Footer({ content: footer }: Props) {
         </div>
 
         <Reveal delay={0.1} className={styles.wordmark}>
-          <Image src={footer.wordmark.src} alt={footer.wordmark.alt} fill sizes="100vw" quality={85} />
+          <svg viewBox="0 0 1000 162" aria-hidden="true">
+            <defs>
+              <linearGradient id="footer-wordmark-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="162">
+                <stop offset="0" stopColor="#ff4c39" />
+                <stop offset="0.45" stopColor="#a8301f" />
+                <stop offset="1" stopColor="#0a0a0a" />
+              </linearGradient>
+            </defs>
+            <text x="0" y="150" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="url(#footer-wordmark-fade)">
+              {footer.name}
+            </text>
+          </svg>
         </Reveal>
+
+        <p className={styles.copyright}>{footer.copyright}</p>
       </div>
     </footer>
   );

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
-import type page from "@/data/about-page.json";
+import type page from "@/data/pages.json";
 import styles from "./Team.module.css";
 
-type Props = { content: typeof page.team };
+type Props = { content: typeof page.about.team };
 
 export default function Team({ content: team }: Props) {
   const { join } = team;
@@ -36,7 +36,7 @@ export default function Team({ content: team }: Props) {
             <Reveal key={member.name} soft delay={0.3 + index * 0.1} className={styles.memberSlot}>
               <article className={styles.member}>
                 <div className={styles.photo}>
-                  <Image src={member.image} alt={member.name} fill sizes="(max-width: 809px) 100vw, (max-width: 1199px) 50vw, 285px" quality={85} />
+                  <Image src={member.image} alt={`${member.name} at PrimeDesk`} fill sizes="(max-width: 809px) 100vw, (max-width: 1199px) 50vw, 285px" quality={85} />
                   <span className={styles.blur} />
                   <div className={styles.socials}>
                     {team.socials.map((social) => (

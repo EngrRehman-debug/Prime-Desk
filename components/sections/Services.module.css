@@ -332,3 +332,31 @@
     width: auto;
   }
 }
+
+/* A long offering list stays inside the original 580px row. */
+.offerings[data-dense="true"] {
+  gap: 12px;
+}
+
+.offerings[data-dense="true"] .offering {
+  padding: 14px 16px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* The hidden part of a row stays out of keyboard reach, only where rows actually expand. */
+@media (min-width: 1200px) {
+  .row:not([data-active="true"]) .expanded {
+    visibility: hidden;
+  }
+
+  .row[data-active="true"] .collapsed {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  [data-static-until-1440="true"] .row[data-active="true"] .collapsed {
+    visibility: visible;
+  }
+}

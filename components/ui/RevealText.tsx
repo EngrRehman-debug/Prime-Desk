@@ -31,12 +31,15 @@ export default function RevealText({ text, className = "" }: { text: string; cla
   }, [update]);
 
   return (
-    <p ref={ref} className={`${styles.text} ${className}`} aria-label={text}>
-      {characters.map((character, index) => (
-        <span key={index} className={styles.character} data-on={index < revealed} aria-hidden="true">
-          {character}
-        </span>
-      ))}
+    <p ref={ref} className={`${styles.text} ${className}`}>
+      <span className={styles.readerText}>{text}</span>
+      <span aria-hidden="true">
+        {characters.map((character, index) => (
+          <span key={index} className={styles.character} data-on={index < revealed}>
+            {character}
+          </span>
+        ))}
+      </span>
     </p>
   );
 }

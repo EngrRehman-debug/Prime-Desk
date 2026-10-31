@@ -1,0 +1,303 @@
+{
+  "services": {
+    "hero": {
+      "heading": "One team for your marketing, creative, and support",
+      "description": "Hire us for the full job or for a single piece. Either way, you get a team that learns your business and does the work.",
+      "eyebrow": "Our services",
+      "statement": "You run the business. We run the marketing.",
+      "statCard": {
+        "title": "One team",
+        "image": "/images/services-growth-insight.webp",
+        "icon": "/images/icon-growth-insight.svg",
+        "counterEnd": 5,
+        "counterSuffix": "",
+        "description": "Service lines under one roof"
+      },
+      "imageCard": {
+        "title": "One partner",
+        "image": "/images/services-brand-growth.webp",
+        "icon": "/images/icon-brand-growth.svg",
+        "description": "Take the full program or just one service."
+      },
+      "tagCard": {
+        "title": "Small businesses in real estate, construction, legal, healthcare, and financial services.",
+        "tags": [
+          "Real estate",
+          "Construction",
+          "Legal",
+          "Healthcare",
+          "Financial services"
+        ]
+      }
+    },
+    "closing": {
+      "image": "/images/cta-shape.webp",
+      "heading": "Not sure what you need?",
+      "description": "Book a call. We'll look at where you are and tell you where to start.",
+      "button": {
+        "label": "Book a call",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "statement": "PrimeDesk started in Houston in 2025. We saw the same gap again and again. Small businesses need a full marketing team. Most can't afford to hire one."
+    },
+    "impact": {
+      "heading": "Small businesses deserve a real marketing team",
+      "description": "So we built one you can share. PrimeDesk gives you strategy, content, ads, SEO, web, and support from a single team. We join your business and run the work day to day. We are registered in Texas and based in Houston. Our team spans four countries, which keeps work moving across time zones.",
+      "review": {
+        "quote": "Fareed led large client accounts at a digital agency before starting PrimeDesk. Today he works with small businesses to build marketing that runs every day.",
+        "name": "Fareed Huda",
+        "role": "Partner",
+        "initials": "FH"
+      },
+      "stats": [
+        {
+          "end": 2025,
+          "suffix": "",
+          "label": "Started in Houston"
+        },
+        {
+          "end": 4,
+          "suffix": "",
+          "label": "Countries our team is based in"
+        },
+        {
+          "end": 12,
+          "suffix": " mo",
+          "label": "Partnership term built for results"
+        },
+        {
+          "end": 5,
+          "suffix": "",
+          "label": "Service lines under one roof"
+        }
+      ]
+    },
+    "different": {
+      "heading": "What makes us different",
+      "description": "One team for your marketing, creative, and support.",
+      "image": {
+        "src": "/images/values-team.webp",
+        "alt": "The PrimeDesk team"
+      },
+      "items": [
+        {
+          "icon": "/images/icon-innovation.svg",
+          "title": "Embedded, not outsourced.",
+          "description": "We work as part of your team."
+        },
+        {
+          "icon": "/images/icon-integrity.svg",
+          "title": "Built for small business.",
+          "description": "Our process and pricing fit small teams."
+        },
+        {
+          "icon": "/images/icon-collaboration.svg",
+          "title": "Nimble.",
+          "description": "When your priorities change, we adjust without rebuilding the scope."
+        },
+        {
+          "icon": "/images/icon-innovation.svg",
+          "title": "Global coverage.",
+          "description": "A distributed team across time zones."
+        },
+        {
+          "icon": "/images/icon-integrity.svg",
+          "title": "Committed to results.",
+          "description": "Our 12-month term means we are in it with you."
+        },
+        {
+          "icon": "/images/icon-collaboration.svg",
+          "title": "One partner.",
+          "description": "Take the full program or just one service."
+        }
+      ]
+    },
+    "team": {
+      "heading": "A team across four countries",
+      "description": "One project manager as your point of contact. Specialists in social, ads, SEO, design, and web behind them.",
+      "join": {
+        "eyebrow": "YOUR POINT OF CONTACT",
+        "title": "One project manager",
+        "description": "Specialists in social, ads, SEO, design, and web behind them.",
+        "cta": {
+          "label": "Book a call",
+          "href": "/contact"
+        }
+      },
+      "socials": [
+        {
+          "icon": "/images/icon-facebook.svg",
+          "label": "Facebook",
+          "href": "#"
+        },
+        {
+          "icon": "/images/icon-instagram.svg",
+          "label": "Instagram",
+          "href": "#"
+        },
+        {
+          "icon": "/images/icon-linkedin.svg",
+          "label": "LinkedIn",
+          "href": "#"
+        }
+      ],
+      "members": [
+        {
+          "name": "Project manager",
+          "role": "Team member",
+          "image": "/images/team-ethan-carter.webp"
+        },
+        {
+          "name": "Social and ads",
+          "role": "Team member",
+          "image": "/images/team-olivia-bennett.webp"
+        },
+        {
+          "name": "SEO",
+          "role": "Team member",
+          "image": "/images/team-sophia-reynolds.webp"
+        },
+        {
+          "name": "Design and web",
+          "role": "Team member",
+          "image": "/images/team-sarah-reynolds.webp"
+        }
+      ]
+    },
+    "cta": {
+      "image": "/images/cta-shape.webp",
+      "heading": "Let's talk about your business",
+      "description": "",
+      "button": {
+        "label": "Book a call",
+        "href": "/contact"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "heading": "Let's talk",
+      "lead": "Tell us about your business. We'll tell you where we'd start.",
+      "image": {
+        "src": "/images/contact-office.webp",
+        "alt": "The PrimeDesk office"
+      },
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "you@company.com"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Your phone number"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Your company"
+        },
+        "needs": {
+          "label": "What do you need help with?",
+          "options": [
+            "Digital marketing",
+            "Web and creative",
+            "Brand and documentation",
+            "Business support",
+            "Events and PR"
+          ]
+        },
+        "message": {
+          "label": "Anything else we should know?",
+          "placeholder": "Type here..."
+        },
+        "submitLabel": "Send message",
+        "sendingLabel": "Sending...",
+        "success": "Thanks. We got your message and will be in touch soon.",
+        "error": "We couldn't send your message. Please try again, or email us directly."
+      }
+    },
+    "channels": {
+      "heading": "Contact details",
+      "items": [
+        {
+          "icon": "/images/icon-contact-office.svg",
+          "title": "Houston, Texas",
+          "description": "Where we are based"
+        },
+        {
+          "icon": "/images/icon-contact-phone.svg",
+          "title": "+1 (832) 819-8366",
+          "href": "tel:+18328198366",
+          "description": "Call us"
+        },
+        {
+          "icon": "/images/icon-contact-sales.svg",
+          "title": "fareed.huda@primedeskgroup.com",
+          "href": "mailto:fareed.huda@primedeskgroup.com",
+          "description": "Email us"
+        }
+      ]
+    }
+  },
+  "legal": {
+    "privacy": {
+      "heading": "Privacy Policy",
+      "description": "How PrimeDesk collects, uses, and protects your information.",
+      "updatedLabel": "Last Updated:",
+      "separator": "|",
+      "note": "Please read carefully before using our services",
+      "rows": [
+        {
+          "heading": "Privacy Policy",
+          "blocks": [
+            {
+              "text": "Our privacy policy is being finalized and will be published here. For questions in the meantime, please contact us."
+            }
+          ],
+          "cta": true
+        }
+      ]
+    },
+    "terms": {
+      "heading": "Terms & Conditions",
+      "description": "The terms that apply when you use the PrimeDesk website and services.",
+      "updatedLabel": "Last Updated:",
+      "separator": "|",
+      "note": "Please read carefully before using our services",
+      "rows": [
+        {
+          "heading": "Terms & Conditions",
+          "blocks": [
+            {
+              "text": "Our terms and conditions are being finalized and will be published here. For questions in the meantime, please contact us."
+            }
+          ],
+          "cta": true
+        }
+      ]
+    },
+    "shared": {
+      "cta": {
+        "label": "Contact us",
+        "href": "/contact"
+      }
+    }
+  },
+  "notFound": {
+    "image": "/images/not-found.svg",
+    "heading": "Page not found",
+    "description": "That page doesn't exist or has moved.",
+    "cta": {
+      "label": "Back to home",
+      "href": "/"
+    }
+  }
+}

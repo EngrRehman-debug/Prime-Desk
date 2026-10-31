@@ -183,3 +183,10 @@
     height: 200vh;
   }
 }
+
+/* The document's step text differs in length, so cards share one height. */
+@media (min-width: 1200px) {
+  .card {
+    min-height: 480px;
+  }
+}

@@ -1,17 +1,26 @@
 import Cta from "@/components/sections/Cta";
-import Footer from "@/components/sections/Footer";
 import LegalContent from "@/components/sections/LegalContent";
-import Nav from "@/components/sections/Nav";
+import PageShell from "@/components/sections/PageShell";
 import landing from "@/data/landing-page.json";
-import legal from "@/data/legal-pages.json";
+import pages from "@/data/pages.json";
+import { pageMetadata } from "@/lib/site";
 
-export default function TermsConditionPage() {
+const { terms, shared } = pages.legal;
+
+// Stays out of search results until the final terms text is added.
+export const metadata = pageMetadata({
+  title: "Terms & Conditions | PrimeDesk",
+  description: terms.description,
+  path: "/terms-condition",
+  image: "/og/home.jpg",
+  noindex: true,
+});
+
+export default function TermsPage() {
   return (
-    <main>
-      <Nav content={landing.nav} />
-      <LegalContent content={legal.terms} cta={legal.shared.cta} />
+    <PageShell>
+      <LegalContent content={terms} cta={shared.cta} />
       <Cta content={landing.cta} />
-      <Footer content={landing.footer} />
-    </main>
+    </PageShell>
   );
 }

@@ -1,624 +1,327 @@
 {
-  "meta": {
-    "title": "GrowthLab Marketing Agency",
-    "description": "GrowthLab is a clean, modern, and high-converting Framer template designed for digital marketing agencies, creative studios, branding agencies, SEO experts, performance marketers, and growth-focused businesses that want to showcase their services."
-  },
   "nav": {
-    "logo": {
-      "src": "/images/logo-growthlab.svg",
-      "alt": "GrowthLab"
-    },
+    "name": "PrimeDesk",
     "links": [
       {
         "label": "Home",
-        "href": "/",
-        "desktopOnly": true
+        "href": "/"
       },
       {
         "label": "Services",
         "href": "/services"
       },
       {
-        "label": "Work",
-        "href": "/work",
-        "desktopOnly": true
-      },
-      {
         "label": "About",
         "href": "/about"
       },
       {
-        "label": "Pricing",
-        "href": "/pricing"
-      },
-      {
-        "label": "Blog",
-        "href": "/blog",
-        "desktopOnly": true
-      },
-      {
-        "label": "Career",
-        "href": "/career",
-        "desktopOnly": true
+        "label": "Contact",
+        "href": "/contact"
       }
     ],
-    "allPagesLabel": "All Pages",
     "cta": {
-      "label": "Contact Us",
+      "label": "Book a call",
       "href": "/contact"
-    },
-    "dropdown": [
-      {
-        "title": "Main Pages",
-        "links": [
-          {
-            "label": "About",
-            "href": "/about"
-          },
-          {
-            "label": "Work",
-            "href": "/work"
-          },
-          {
-            "label": "Services",
-            "href": "/services"
-          },
-          {
-            "label": "Pricing",
-            "href": "/pricing"
-          },
-          {
-            "label": "Blog",
-            "href": "/blog"
-          },
-          {
-            "label": "Career",
-            "href": "/career"
-          },
-          {
-            "label": "Contact",
-            "href": "/contact"
-          }
-        ]
-      },
-      {
-        "title": "CMS Pages",
-        "links": [
-          {
-            "label": "Work Details",
-            "href": "/work/alongside"
-          },
-          {
-            "label": "Blog Details",
-            "href": "/blog/why-most-digital-marketing-campaigns-fail"
-          }
-        ]
-      },
-      {
-        "title": "Utility Pages",
-        "links": [
-          {
-            "label": "404",
-            "href": "/404"
-          },
-          {
-            "label": "Coming Soon",
-            "href": "/coming-soon"
-          }
-        ]
-      },
-      {
-        "title": "Legal",
-        "links": [
-          {
-            "label": "Privacy Policy",
-            "href": "/privacy-policy"
-          },
-          {
-            "label": "Terms & Conditions",
-            "href": "/terms-condition"
-          }
-        ]
-      }
-    ],
-    "mobileOrder": [
-      "Main Pages",
-      "CMS Pages",
-      "Legal",
-      "Utility Pages"
-    ]
+    }
   },
   "hero": {
-    "eyebrowLeft": "©2026",
-    "eyebrowRight": "AGENCY",
-    "wordmark": {
-      "src": "/images/hero-marketing-wordmark.webp",
-      "alt": "Marketing",
-      "width": 2582,
-      "height": 543
-    },
+    "eyebrowLeft": "FULL-SERVICE MARKETING",
+    "eyebrowRight": "HOUSTON, TX",
     "portrait": {
       "src": "/images/hero-portrait.webp",
       "alt": "Portrait on a red background"
     },
     "stats": [
       {
-        "value": "10+",
-        "label": "Years of Experience"
+        "value": "4",
+        "label": "Countries our team is based in"
       },
       {
-        "value": "500M+",
-        "label": "Impressions Delivered"
+        "value": "12 mo",
+        "label": "Partnership term built for results"
       },
       {
-        "value": "220+",
-        "label": "Successful Projects"
+        "value": "5",
+        "label": "Service lines under one roof"
       }
     ],
-    "description": "Brand strategy, visual identity, digital campaigns, and media planning — crafted to grow your market share",
+    "description": "A full-service marketing team for your small business. Strategy, content, ads, SEO, and web, run for you.",
     "primaryCta": {
-      "label": "Start your project",
+      "label": "Book a call",
       "href": "/contact"
     },
     "secondaryCta": {
-      "label": "Start your project",
-      "href": "/terms-condition"
+      "label": "See our services",
+      "href": "/services"
     },
     "tags": [
-      "Clarity in positioning",
-      "Performance-Driven Marketing",
-      "Media Planning",
-      "Growth Systems"
+      "Digital Marketing",
+      "Web & Creative",
+      "Brand & Documentation",
+      "Business Support",
+      "Events & PR"
+    ],
+    "headlineLines": [
+      "We become your",
+      "marketing department."
     ]
   },
   "brandTicker": [
-    "VISUAL IDENTITY",
-    "PERFORMANCE ADS",
-    "SOCIAL MEDIA",
-    "SEO & GROWTH",
-    "BRAND STRATEGY",
     "DIGITAL MARKETING",
-    "VISUAL IDENTITY"
+    "SOCIAL MEDIA",
+    "PAID ADS",
+    "EMAIL MARKETING",
+    "LOCAL SEO",
+    "WEB DESIGN",
+    "BRAND IDENTITY",
+    "PR & EVENTS",
+    "STAFF AUGMENTATION"
   ],
   "about": {
     "locations": [
-      "SINCE 2019",
-      "GERMANY",
-      "USA",
-      "UK"
+      "HOUSTON, TX",
+      "EST. 2025"
     ],
-    "statement": "We don't do generic. Every brand we touch gets a strategy built from scratch, obsessed with data, and executed with precision, until the numbers actually move."
+    "statement": "You run the business. We run the marketing."
   },
   "clients": {
-    "heading": "Our Clients",
-    "description": "Worked with 50+ brands across multiple industries Brand • Ecommerce • Service • Local Businesses",
-    "logos": [
-      {
-        "src": "/images/client-45-degrees.svg",
-        "alt": "45 Degrees",
-        "width": 214,
-        "phoneWidth": 142
-      },
-      {
-        "src": "/images/client-acme-corp.svg",
-        "alt": "Acme Corp",
-        "width": 203,
-        "phoneWidth": 135
-      },
-      {
-        "src": "/images/client-alt-shift.svg",
-        "alt": "Alt+Shift",
-        "width": 153,
-        "phoneWidth": 102
-      },
-      {
-        "src": "/images/client-building-blocks.svg",
-        "alt": "BuildingBlocks",
-        "width": 242,
-        "phoneWidth": 161
-      },
-      {
-        "src": "/images/client-capsule.svg",
-        "alt": "Capsule",
-        "width": 149,
-        "phoneWidth": 99
-      }
+    "heading": "Who we work with",
+    "description": "Small businesses in real estate, construction, legal, healthcare, and financial services.",
+    "tags": [
+      "Real estate",
+      "Construction",
+      "Legal",
+      "Healthcare",
+      "Financial services"
     ]
   },
   "process": {
-    "heading": "Our Process",
-    "description": "A disciplined four step framework that eliminates guesswork and delivers predictable growth.",
+    "heading": "How we work",
+    "description": "Four steps. A plan you can see and a team that runs it.",
     "steps": [
       {
         "number": "01",
         "title": "Discover",
-        "description": "We go deep into your brand, market, audience, and competitors to uncover what others miss.",
+        "description": "We join your team. We learn your goals, your customers, and what matters most this year.",
         "image": "/images/process-discover.webp"
       },
       {
         "number": "02",
         "title": "Strategize",
-        "description": "We build a precise roadmap, channels, budget, messaging, and milestones, before a single dollar is spent.",
+        "description": "We research your market and competitors. Then we set the plan for channels, messages, and priorities.",
         "image": "/images/process-strategize.webp"
       },
       {
         "number": "03",
         "title": "Execute",
-        "description": "Our team of designers, strategists, and media buyers launches every campaign with obsessive detail.",
+        "description": "We create the content, run the campaigns, and keep your website and marketing assets current.",
         "image": "/images/process-execute.webp"
       },
       {
         "number": "04",
         "title": "Optimize",
-        "description": "We track every metric, kill what doesn't work, scale what does, and report everything transparently.",
+        "description": "Weekly calls and monthly reports show what works. We cut what doesn't and back what does.",
         "image": "/images/process-optimize.webp"
       }
     ]
   },
   "values": {
-    "heading": "Our Values",
-    "description": "We fuel bold ideas, driving them forward with sharp strategy",
+    "heading": "How we operate",
+    "description": "Small teams win on focus. So do we.",
     "image": {
       "src": "/images/values-team.webp",
-      "alt": "The GrowthLab team"
+      "alt": "The PrimeDesk team"
     },
     "items": [
       {
         "icon": "/images/icon-innovation.svg",
-        "title": "Innovation",
-        "description": "We push beyond conventional copywriting, experimenting with voice, tone, and structure to create experiences that feel fresh and intuitive. Our UX writers embrace emerging tools and methodologies to craft copy that sets new standards for digital experiences."
+        "title": "Embedded",
+        "description": "We act as part of your team, not a vendor you brief once a quarter. We join your calls, learn your priorities, and own the work. When priorities change, we change with you."
       },
       {
         "icon": "/images/icon-collaboration.svg",
-        "title": "Collaboration",
-        "description": "Great UX writing doesn't happen in isolation. We partner closely with designers, product managers, and developers from concept to launch—ensuring every word is tested, refined, and aligned with the broader user journey."
+        "title": "Straight talk",
+        "description": "You get plain answers and clear reporting. We tell you what is working, what is not, and what we would do next. No jargon. No padding."
       },
       {
         "icon": "/images/icon-integrity.svg",
-        "title": "Integrity",
-        "description": "We write with honesty and transparency, never using dark patterns or misleading language to manipulate users. Every piece of copy we craft is rooted in trust, accessibility, and a genuine commitment to serving the people who interact with our work."
+        "title": "Built for small business",
+        "description": "We know small teams have limited time and budget. We keep the scope tight and the plan simple. We spend where it moves the numbers."
       }
     ]
   },
   "services": {
-    "heading": "What we offer / Service",
-    "description": "End to end solutions to build, grow, and scale your brand.",
+    "heading": "Services",
+    "description": "One team for your marketing, creative, and support.",
     "background": "/images/service-background.webp",
     "cta": {
-      "label": "Start your project",
+      "label": "Book a call",
       "href": "/contact"
     },
-    "projectsValue": "34+",
-    "projectsLabel": "projects done",
-    "projectsDescription": "Streamline your workflows and nurture leads around the clock with intelligent, personalized communication systems.",
     "items": [
       {
         "number": "01",
-        "category": "Marketing Service",
         "title": "Digital Marketing",
+        "summary": "The engine. We plan it, run it, and report on it every month.",
         "image": "/images/service-digital-marketing.webp",
         "offerings": [
-          "Content\nMarketing",
-          "Email\nMarketing\nCampaigns",
-          "Analytics &\nReporting"
-        ]
+          "Social media strategy and management",
+          "Social content, reels, and short-form video",
+          "Meta and Google advertising and optimization",
+          "Email marketing",
+          "Local SEO, citations, and review management",
+          "Website SEO and content writing",
+          "CRM setup, lead management, and follow-up",
+          "Digital strategy, lead generation, and reporting"
+        ],
+        "category": "Service",
+        "contactOption": "Digital marketing"
       },
       {
         "number": "02",
-        "category": "Design Service",
-        "title": "Visual Identity",
+        "title": "Web & Creative",
+        "summary": "Your site and your look, built to work together.",
         "image": "/images/service-visual-identity.webp",
         "offerings": [
-          "Brand Strategy\n& Discovery",
-          "Logo Design\nSuite",
-          "Color Palette &\nTypography"
-        ]
+          "Website design and development",
+          "Graphic design and marketing collateral"
+        ],
+        "category": "Service",
+        "contactOption": "Web and creative"
       },
       {
         "number": "03",
-        "category": "Design Service",
-        "title": "Brand Strategy",
+        "title": "Brand & Documentation",
+        "summary": "The materials that make a small business look established.",
         "image": "/images/service-brand-strategy.webp",
         "offerings": [
-          "Logo Design",
-          "Brand Identity\nSystem",
-          "Typography &\nColor System"
-        ]
+          "Logo design and brand identity",
+          "Brand guidelines and branding assets",
+          "Company collateral: brochures, decks, portfolios",
+          "Product and service documentation"
+        ],
+        "category": "Service",
+        "contactOption": "Brand and documentation"
       },
       {
-        "number": "03",
-        "category": "Media Service",
-        "title": "Media Planning",
+        "number": "04",
+        "title": "Business Support",
+        "summary": "More capacity without a new hire.",
         "image": "/images/service-media-planning.webp",
         "offerings": [
-          "Media Strategy\nPlanning",
-          "Budget\nStrategy",
-          "Channel\nSelection"
-        ]
-      }
-    ]
-  },
-  "work": {
-    "heading": "Work That Delivers Results",
-    "description": "A closer look at how we help brands solve problems, improve performance, and achieve measurable growth.",
-    "clientLabel": "Client:",
-    "servicesLabel": "Services:",
-    "ctaLabel": "See the Work / Case Studies",
-    "items": [
-      {
-        "title": "Alongside",
-        "href": "/work/alongside",
-        "description": "A complete visual identity overhaul, including logo design, typography, color palette, and asset creation. The project gave the client a cohesive, that stands out across all platforms.",
-        "client": "Lumina Legal",
-        "services": [
-          "Visual Identity",
-          "Design"
+          "Staff augmentation for expanding workloads",
+          "Virtual assistant and day-to-day admin support"
         ],
-        "image": "/images/work-alongside.webp"
+        "category": "Service",
+        "contactOption": "Business support"
       },
       {
-        "title": "Hypertech",
-        "href": "/work/hypertech",
-        "description": "A multi channel digital marketing campaign spanning paid social, email nurturing, and search ads. Data driven targeting and weekly creative refreshes helped the client.",
-        "client": "FitFuel Nutrition",
-        "services": [
-          "Digital Marketing",
-          "ADs"
+        "number": "05",
+        "title": "Events & PR",
+        "summary": "Offered case by case, remotely or in person.",
+        "image": "/images/service-digital-marketing.webp",
+        "offerings": [
+          "Event planning and support",
+          "Influencer relations",
+          "Podcast support",
+          "Award submissions",
+          "Press releases and media relations"
         ],
-        "image": "/images/work-hypertech.webp"
-      },
-      {
-        "title": "Redefine Flow",
-        "href": "/work/redefine-flow",
-        "description": "A deep dive brand strategy project uncovering the client's true positioning, audience insights, and messaging framework. The outcome was a clear brand roadmap.",
-        "client": "Verge Consulting",
-        "services": [
-          "Brand Strategy",
-          "Design"
-        ],
-        "image": "/images/work-redefine-flow.webp"
-      },
-      {
-        "title": "Recap",
-        "href": "/work/recap",
-        "description": "A strategic media planning project that identified the most effective channels, budgets, and timing for the client's goals. By optimizing ad placements across streaming,",
-        "client": "Harbor Financial Group",
-        "services": [
-          "Media Planning",
-          "Design"
-        ],
-        "image": "/images/work-recap.webp"
-      }
-    ]
-  },
-  "testimonials": {
-    "headingLines": [
-      "Trusted by",
-      "Happy Clients."
-    ],
-    "description": "Discover how our design solutions have made a lasting impact on brands and businesses just like yours.",
-    "background": "/images/testimonial-background.webp",
-    "left": [
-      {
-        "id": "michael",
-        "quote": "I was terrified to start my home search — the market felt overwhelming, and I had no idea where to even begin. But Shelta One walked me through every single step with patience, kindness, and real expertise. ",
-        "highlight": "They answered all my questions, no matter how small, and never made me feel rushed or pressured.",
-        "name": "Michael Torres",
-        "role": "Austin, TX",
-        "avatar": "/images/avatar-michael-torres.webp",
-        "portrait": "/images/testimonial-michael-torres.webp"
-      },
-      {
-        "id": "jessica",
-        "quote": "I was completely lost when I started looking for my first apartment — every listing looked the same, and I didn't know what questions to ask. But Shelta One walked me through every single step with patience, kindness, and real expertise. ",
-        "highlight": "They explained everything clearly, found options I actually loved, and made sure I understand everything.",
-        "name": "Jessica Chen",
-        "role": "Portland, OR",
-        "avatar": "/images/avatar-jessica-chen.webp",
-        "portrait": "/images/testimonial-jessica-chen.webp"
-      },
-      {
-        "id": "emily",
-        "quote": "They handled the photography, pricing, and negotiations while I just focused on packing — and we sold above asking price in less than two weeks.    ",
-        "highlight": "They handled the photography, pricing, and negotiations while I just focused on packing.",
-        "name": "Emily Rodriguez",
-        "role": "Nashville, TN",
-        "avatar": "/images/avatar-emily-rodriguez.webp",
-        "portrait": "/images/testimonial-emily-rodriguez.webp"
-      }
-    ],
-    "right": [
-      {
-        "id": "ava",
-        "quote": "\"I had been searching for months without success before working with Shelta One. They quickly understood what I was looking for and helped me find the perfect property within my budget.\"",
-        "highlight": "Every concern I raised was addressed thoughtfully, giving me confidence at every stage of the journey.",
-        "name": "Ava Morgan",
-        "role": "Product Manager",
-        "avatar": "/images/avatar-ava-morgan.webp",
-        "portrait": "/images/testimonial-ava-morgan.webp"
-      },
-      {
-        "id": "daniel",
-        "quote": "I was relocating for work and had to buy a home from across the country — which felt impossible. But Shelta One walked me through every single step with patience, kindness, and real expertise.  ",
-        "highlight": "They did virtual tours, coordinated inspections, and made sure I felt confident.",
-        "name": "Daniel Okafor",
-        "role": "Chicago, IL ",
-        "avatar": "/images/avatar-daniel-okafor.webp",
-        "portrait": "/images/testimonial-daniel-okafor.webp"
-      }
-    ]
-  },
-  "pricing": {
-    "heading": "Simple, Transparent Pricing",
-    "description": "Choose the right plan tailored to your business needs. Affordable, flexible, and packed with features to help you grow and succeed online.",
-    "monthlyLabel": "Monthly",
-    "yearlyLabel": "Yearly",
-    "saveLabel": "20% off",
-    "currency": "$",
-    "period": "/yearly",
-    "featuresLabel": "Features:",
-    "ctaLabel": "Select Plan",
-    "ctaHref": "/contact",
-    "popularLabel": "Popular",
-    "plans": [
-      {
-        "name": "Starter",
-        "description": "Ideal for small business",
-        "monthly": "3000",
-        "yearly": "5000",
-        "featured": false,
-        "features": [
-          "Single page responsive portfolio",
-          "Clean template customization",
-          "Basic image gallery setup",
-          "Standard speed optimization",
-          "Email support only"
-        ]
-      },
-      {
-        "name": "Growth Plan",
-        "description": "Perfect for growing businesses",
-        "monthly": "4500",
-        "yearly": "7000",
-        "featured": true,
-        "features": [
-          "Custom UI design aligned with your brand",
-          "Conversion focused landing pages",
-          "Advanced speed optimization",
-          "Basic SEO setup (on page)",
-          "Analytics & tracking integration"
-        ]
-      },
-      {
-        "name": "Scale",
-        "description": "A great fit for startups and small teams",
-        "monthly": "6900",
-        "yearly": "9000",
-        "featured": false,
-        "features": [
-          "Fully custom website (unlimited pages)",
-          "Advanced UX/UI design with system",
-          "High converting funnels & landing pages",
-          "Full SEO optimization (on page + technical)",
-          "Performance marketing setup"
-        ]
+        "category": "Service",
+        "contactOption": "Events and PR"
       }
     ]
   },
   "faq": {
-    "heading": "Frequently Asked Question",
-    "description": "Frequently asked questions about GrowthLab services",
+    "heading": "Frequently asked questions",
+    "description": "Answers about working with PrimeDesk.",
     "tabs": [
       {
         "label": "General",
         "items": [
           0,
           1,
-          2,
+          2
+        ]
+      },
+      {
+        "label": "Pricing",
+        "items": [
           3,
           4
         ]
       },
       {
-        "label": "Payments",
+        "label": "Working Together",
         "items": [
-          0,
-          1,
-          3
+          5,
+          6,
+          7,
+          8
         ]
       },
       {
-        "label": "Features",
+        "label": "Ownership",
         "items": [
-          0,
-          2,
-          4
-        ]
-      },
-      {
-        "label": "Security",
-        "items": [
-          0,
-          1,
-          2
+          9
         ]
       }
     ],
     "items": [
       {
-        "question": "How often do you need to repair your roof?",
-        "answer": "Most roofs need minor repairs every 5–10 years and major repairs every 15–20 years. We recommend a yearly inspection, plus an extra check after heavy storms, so small issues get caught early."
+        "question": "Who is PrimeDesk for?",
+        "answer": "Small businesses that want a full marketing team without hiring one. Our clients are in real estate, construction, legal, healthcare, and financial services."
       },
       {
-        "question": "Do you offer a next day delivery service?",
-        "answer": "Yes, next-day delivery is available on most roofing materials within our service area for orders placed before 2:00 PM. Same-day delivery can also be arranged for urgent or emergency jobs."
+        "question": "Where are you based?",
+        "answer": "Houston, Texas. Our team spans four countries, so work moves across time zones."
       },
       {
-        "question": "What is the standard delivery time?",
-        "answer": "Standard delivery takes 2–5 business days within our service area. Larger or custom orders may take 7–10 business days. You'll receive tracking details once your order is shipped."
+        "question": "Can I hire you for one service?",
+        "answer": "Yes. You can take the full program or a single service."
       },
       {
-        "question": "How can I access emergency services?",
-        "answer": "Our emergency roofing services are available 24/7 for leaks, storm damage, and urgent repairs. Just call our emergency hotline at [phone number], and a technician will be dispatched right away."
+        "question": "How much does it cost?",
+        "answer": "You pay a flat monthly price based on the services you pick. We quote after a short call."
       },
       {
-        "question": "Do you offer an installation service?",
-        "answer": "Yes, we offer full installation services for residential and commercial roofs. Our team manages everything from inspection and material selection to final installation, all backed by our warranty."
-      }
-    ]
-  },
-  "blog": {
-    "heading": "Blog & Insights That Drive Growth",
-    "description": "Explore marketing trends, strategies, and expert tips to help your brand grow faster and smarter in the digital world. ",
-    "cta": {
-      "label": "See all Articles",
-      "href": "/blog"
-    },
-    "viewLabel": "View Blog",
-    "featured": {
-      "category": "Marketing Strategy",
-      "title": "Why Most Digital Marketing Campaigns Fail",
-      "description": "It’s not the budget—it’s the strategy. Learn the common mistakes brands make and how to fix them.",
-      "href": "/blog/why-most-digital-marketing-campaigns-fail",
-      "image": "/images/blog-digital-campaigns.webp"
-    },
-    "posts": [
-      {
-        "category": "Brand Strategy",
-        "title": "Design That Sells: The Psychology Behind Branding",
-        "description": "Design isn’t just visual—it’s behavioral. Understand what actually influences user decisions.",
-        "href": "/blog/design-that-sells-the-psychology-behind-branding",
-        "image": "/images/blog-design-that-sells.webp",
-        "objectPosition": "50% 50%"
+        "question": "Why a 12-month term?",
+        "answer": "Marketing takes time. The first three months go to setup and learning. Results build after that. A 12-month term lets us do the job properly."
       },
       {
-        "category": "Media Planning",
-        "title": "Media Planning 101: Spend Smarter, Not More",
-        "description": "Smarter allocation beats bigger budgets. Here’s how to maximize ROI with better planning.",
-        "href": "/blog/media-planning-101-spend-smarter-not-more",
-        "image": "/images/blog-media-planning.webp",
-        "objectPosition": "47.7% 19.3%"
+        "question": "How much of my time do you need?",
+        "answer": "Most in the first three months. We need your direction, reviews, and feedback. A weekly call is standard. After that, we run the work."
+      },
+      {
+        "question": "Who does the work?",
+        "answer": "A distributed team led by a project manager. The project manager is your point of contact."
+      },
+      {
+        "question": "Do you shoot photo or video on site?",
+        "answer": "We refer a trusted local freelancer. You pay them directly."
+      },
+      {
+        "question": "What do you report on?",
+        "answer": "Leads, traffic, ads, social, and reviews, in one monthly report."
+      },
+      {
+        "question": "Who owns my accounts, site, and content?",
+        "answer": "You do. You keep access to your accounts, website, and assets at all times."
       }
     ]
   },
   "cta": {
     "image": "/images/cta-shape.webp",
-    "heading": "Ready to Grow Your Brand?",
-    "description": "Let’s build something that actually works.",
+    "heading": "Ready for a marketing team that works inside yours?",
+    "description": "Tell us about your business. We'll tell you where we'd start.",
     "button": {
-      "label": "Contact Us",
+      "label": "Book a call",
       "href": "/contact"
     }
   },
   "footer": {
-    "logo": "/images/logo-growthlab-footer.svg",
-    "description": "GrowthLab is a modern agency focused on building brands through strategy, design, and marketing, creating systems that drive clarity, consistency, and real growth.",
-    "newsletter": {
-      "title": "Subscribe to Our Newsletter",
-      "buttonLabel": "Subscribe",
-      "note": "No spam. Just great content.",
-      "placeholder": "Enter your email"
-    },
+    "name": "PrimeDesk",
+    "description": "PrimeDesk is a Houston marketing agency for small businesses. Strategy, creative, and business support from one embedded team.",
     "columns": [
       {
         "title": "Main Pages",
@@ -628,55 +331,12 @@
             "href": "/about"
           },
           {
-            "label": "Work",
-            "href": "/work"
-          },
-          {
             "label": "Services",
             "href": "/services"
           },
           {
-            "label": "Pricing",
-            "href": "/pricing"
-          },
-          {
-            "label": "Blog",
-            "href": "/blog"
-          },
-          {
-            "label": "Career",
-            "href": "/career"
-          },
-          {
             "label": "Contact",
             "href": "/contact"
-          }
-        ]
-      },
-      {
-        "title": "CMS Pages",
-        "links": [
-          {
-            "label": "Work Details",
-            "href": "/work/alongside"
-          },
-          {
-            "label": "Blog Details",
-            "href": "/blog/why-most-digital-marketing-campaigns-fail"
-          }
-        ]
-      },
-      {
-        "title": "Utility Pages",
-        "hideOnPhone": true,
-        "links": [
-          {
-            "label": "404",
-            "href": "/404"
-          },
-          {
-            "label": "Coming Soon",
-            "href": "/coming-soon"
           }
         ]
       },
@@ -692,27 +352,6 @@
             "href": "/terms-condition"
           }
         ]
-      },
-      {
-        "title": "Social Links",
-        "links": [
-          {
-            "label": "Facebook",
-            "href": "https://www.facebook.com/"
-          },
-          {
-            "label": "Instagram",
-            "href": "https://www.instagram.com/"
-          },
-          {
-            "label": "Twitter / X",
-            "href": "https://x.com/"
-          },
-          {
-            "label": "LinkedIn",
-            "href": "https://www.linkedin.com/"
-          }
-        ]
       }
     ],
     "contact": {
@@ -720,27 +359,24 @@
       "items": [
         {
           "icon": "/images/icon-phone.svg",
-          "label": "020 5691 2456",
-          "href": "tel:+020 5691 2456",
+          "label": "+1 (832) 819-8366",
+          "href": "tel:+18328198366",
           "note": "Monday to Friday, 9am to 5pm"
         },
         {
           "icon": "/images/icon-email.svg",
-          "label": "help@GrowthLab.com",
-          "href": "mailto:help@GrowthLab.com",
+          "label": "fareed.huda@primedeskgroup.com",
+          "href": "mailto:fareed.huda@primedeskgroup.com",
           "note": "We aim to reply in 24 hours"
-        },
-        {
-          "icon": "/images/icon-press.svg",
-          "label": "prees@GrowthLab.com",
-          "href": "mailto:help@GrowthLab.com",
-          "note": "Press and media inquires"
         }
       ]
     },
-    "wordmark": {
-      "src": "/images/footer-wordmark.webp",
-      "alt": "GrowthLab"
+    "copyright": "© 2026 PrimeDesk Business Solutions. All rights reserved.",
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "buttonLabel": "Subscribe",
+      "note": "No spam. Just great content.",
+      "placeholder": "Enter your email"
     }
   }
 }

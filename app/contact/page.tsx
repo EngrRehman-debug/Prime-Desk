@@ -1,21 +1,31 @@
 import ContactChannels from "@/components/sections/ContactChannels";
 import ContactHero from "@/components/sections/ContactHero";
 import Cta from "@/components/sections/Cta";
-import Faq from "@/components/sections/Faq";
-import Footer from "@/components/sections/Footer";
-import Nav from "@/components/sections/Nav";
-import page from "@/data/contact-page.json";
+import PageShell from "@/components/sections/PageShell";
+import JsonLd from "@/components/ui/JsonLd";
 import landing from "@/data/landing-page.json";
+import pages from "@/data/pages.json";
+import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/site";
+
+const page = pages.contact;
+const title = "Contact PrimeDesk | Book a Call";
+
+export const metadata = pageMetadata({
+  title,
+  description: page.hero.lead,
+  path: "/contact",
+  image: "/og/contact.jpg",
+});
 
 export default function ContactPage() {
   return (
-    <main>
-      <Nav content={landing.nav} />
+    <PageShell>
+      <JsonLd data={webPageSchema("ContactPage", title, "/contact", page.hero.lead)} />
+      <JsonLd data={breadcrumbSchema("Contact", "/contact")} />
       <ContactHero content={page.hero} />
       <ContactChannels content={page.channels} />
-      <Faq content={landing.faq} placement="afterCards" />
       <Cta content={landing.cta} />
-      <Footer content={landing.footer} />
-    </main>
+    </PageShell>
   );
 }

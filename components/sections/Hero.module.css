@@ -167,3 +167,45 @@
     justify-content: flex-start;
   }
 }
+
+/* The document's headline sits in the wordmark's box. */
+.headline {
+  font-family: var(--font-display), sans-serif;
+  font-size: 11vw;
+  line-height: 0.96;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #3a0500 0%, #7a0d02 6%, #ff5a0a 14%, #ff6210 38%, #e23a06 45%, #150100 50%, #3a0500 53%, #ff4a0a 58%, #ff6210 78%, #a31c04 90%, #4a0701 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.headline span {
+  display: block;
+  white-space: nowrap;
+}
+
+/* Matches the photo so the white stats never sit on the page color before it loads. */
+.banner {
+  background: #b00000;
+}
+
+/* The document's stat labels and eyebrow are longer than the original ones. */
+.stat {
+  width: auto;
+}
+
+.stat span {
+  white-space: nowrap;
+}
+
+@media (max-width: 809.98px) {
+  .eyebrows {
+    height: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+}

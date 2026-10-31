@@ -13,9 +13,11 @@ export default function Hero({ content: hero }: Props) {
           <span>{hero.eyebrowLeft}</span>
           <span>{hero.eyebrowRight}</span>
         </div>
-        <div className={styles.wordmark}>
-          <Image src={hero.wordmark.src} alt={hero.wordmark.alt} fill sizes="(max-width: 809px) 100vw, 100vw" quality={85} priority />
-        </div>
+        <h1 className={`${styles.wordmark} ${styles.headline}`}>
+          {hero.headlineLines.map((line) => (
+            <span key={line}>{line} </span>
+          ))}
+        </h1>
       </section>
 
       <section className={styles.banner}>

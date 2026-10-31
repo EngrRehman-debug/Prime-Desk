@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import type { ReactNode } from "react";
-import content from "@/data/landing-page.json";
+import JsonLd from "@/components/ui/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
+import { site } from "@/lib/site";
 import "./globals.css";
 
 const urbanist = localFont({
@@ -12,23 +14,36 @@ const urbanist = localFont({
   display: "swap",
 });
 
+const display = localFont({
+  src: "../public/fonts/bebas-neue-latin-400-normal.woff2",
+  weight: "400",
+  style: "normal",
+  variable: "--font-display",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3101"),
-  title: content.meta.title,
-  description: content.meta.description,
-  icons: { icon: "/images/favicon-light.webp" },
-  openGraph: {
-    title: content.meta.title,
-    description: content.meta.description,
-    images: ["/images/og-image.webp"],
-  },
+  metadataBase: new URL(site.url),
+  applicationName: site.name,
+  title: { default: "PrimeDesk | Marketing Agency for Small Businesses", template: "%s | PrimeDesk" },
+  description: site.description,
+  authors: [{ name: site.legalName }],
+  formatDetection: { telephone: false },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f3efe8",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={urbanist.variable}>
+    <html lang="en" className={`${urbanist.variable} ${display.variable}`}>
       {/* Browser extensions such as ColorZilla add attributes to <body> before React loads. */}
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        <JsonLd data={organizationSchema} />
+        <JsonLd data={websiteSchema} />
+        {children}
+      </body>
     </html>
   );
 }

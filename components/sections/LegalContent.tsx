@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Appear from "@/components/ui/Appear";
 import Button from "@/components/ui/Button";
-import type legal from "@/data/legal-pages.json";
+import type pages from "@/data/pages.json";
 import styles from "./LegalContent.module.css";
 
 type Props = {
-  content: typeof legal.privacy;
-  cta: typeof legal.shared.cta;
+  content: typeof pages.legal.privacy;
+  cta: typeof pages.legal.shared.cta;
 };
 
 export default function LegalContent({ content, cta }: Props) {
@@ -33,18 +33,12 @@ export default function LegalContent({ content, cta }: Props) {
         {content.rows.map((row) => (
           <div key={row.heading} className={styles.row}>
             <h3>{row.heading}</h3>
-            <div className={styles.body} data-tight={"tight" in row}>
-              {row.blocks.map((block, index) =>
-                "bullet" in block ? (
-                  <p key={index} className={styles.bullet}>
-                    {block.bullet}
-                  </p>
-                ) : (
-                  <p key={index} className={styles.text}>
-                    {block.text}
-                  </p>
-                ),
-              )}
+            <div className={styles.body}>
+              {row.blocks.map((block, index) => (
+                <p key={index} className={styles.text}>
+                  {block.text}
+                </p>
+              ))}
               {"cta" in row && <Button href={cta.href} label={cta.label} variant="dark" arrow={false} className={styles.cta} />}
             </div>
           </div>

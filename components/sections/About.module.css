@@ -58,3 +58,7 @@
     text-align: center;
   }
 }
+
+.locations p {
+  white-space: nowrap;
+}

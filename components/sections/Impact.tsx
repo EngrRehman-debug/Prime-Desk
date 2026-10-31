@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Appear from "@/components/ui/Appear";
 import Counter from "@/components/ui/Counter";
-import type page from "@/data/about-page.json";
+import type page from "@/data/pages.json";
 import styles from "./Impact.module.css";
 
-type Props = { content: typeof page.impact };
+type Props = { content: typeof page.about.impact };
 
 function QuoteMark() {
   return (
@@ -24,7 +23,7 @@ export default function Impact({ content: impact }: Props) {
       <div className={styles.container}>
         <div className={styles.header}>
           <Appear delay={0.1}>
-            <h2 className="h1">{impact.heading}</h2>
+            <h1 className="h1">{impact.heading}</h1>
           </Appear>
           <Appear delay={0.2}>
             <p className={`body18 ${styles.description}`}>{impact.description}</p>
@@ -38,7 +37,9 @@ export default function Impact({ content: impact }: Props) {
               <h3>{review.quote}</h3>
             </div>
             <div className={styles.author}>
-              <Image src={review.avatar} alt="" width={58} height={58} quality={85} />
+              <span className={styles.initials} aria-hidden="true">
+                {review.initials}
+              </span>
               <div>
                 <p className={styles.name}>{review.name}</p>
                 <p className="body18">{review.role}</p>

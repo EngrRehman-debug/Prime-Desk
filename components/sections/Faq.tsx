@@ -12,6 +12,9 @@ type Props = {
   placement?: "afterPricing" | "beforePricing" | "standalone" | "afterCards";
 };
 
+/** On narrow screens opening an item moves the list under the cursor, so items open on tap there. */
+const opensOnHover = () => window.matchMedia("(hover: hover) and (min-width: 810px)").matches;
+
 export default function Faq({ content: faq, placement = "afterPricing" }: Props) {
   const [tabIndex, setTabIndex] = useState(0);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -81,7 +84,7 @@ export default function Faq({ content: faq, placement = "afterPricing" }: Props)
                 onClick={() => {
                   if (index !== tabIndex) heightBeforeSwitch.current = listRef.current?.offsetHeight ?? null;
                   setTabIndex(index);
-                  setOpenIndex(0);
+                  setOpenIndex(faq.tabs[index].items[0]);
                 }}
               >
                 {tab.label}
@@ -94,12 +97,22 @@ export default function Faq({ content: faq, placement = "afterPricing" }: Props)
             const item = faq.items[itemIndex];
             const open = openIndex === itemIndex;
             return (
-              <div key={item.question} className={styles.item} data-open={open}>
+              <div
+                key={item.question}
+                className={styles.item}
+                data-open={open}
+                onMouseEnter={() => {
+                  if (opensOnHover()) setOpenIndex(itemIndex);
+                }}
+                onMouseLeave={() => {
+                  if (opensOnHover()) setOpenIndex(null);
+                }}
+              >
                 <button
                   type="button"
                   className={styles.question}
                   aria-expanded={open}
-                  onClick={() => setOpenIndex(open ? null : itemIndex)}
+                  onClick={() => setOpenIndex(itemIndex)}
                 >
                   <span>{item.question}</span>
                   <span className={styles.icon}>

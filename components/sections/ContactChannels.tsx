@@ -1,9 +1,22 @@
 import Image from "next/image";
+import { Fragment } from "react";
 import Reveal from "@/components/ui/Reveal";
-import type page from "@/data/contact-page.json";
+import type page from "@/data/pages.json";
 import styles from "./ContactChannels.module.css";
 
-type Props = { content: typeof page.channels };
+type Props = { content: typeof page.contact.channels };
+
+/** Lets a long email address wrap at the @ instead of mid-word. */
+function breakAtSign(text: string) {
+  const [before, after] = text.split("@");
+  if (!after) return text;
+  return (
+    <Fragment>
+      {before}
+      <wbr />@{after}
+    </Fragment>
+  );
+}
 
 export default function ContactChannels({ content }: Props) {
   return (
@@ -20,9 +33,7 @@ export default function ContactChannels({ content }: Props) {
                   <Image src={item.icon} alt="" width={35} height={35} unoptimized />
                 </span>
                 <div className={styles.text}>
-                  <h3>
-                    <a href={item.href}>{item.title}</a>
-                  </h3>
+                  <h3>{item.href ? <a href={item.href}>{breakAtSign(item.title)}</a> : item.title}</h3>
                   <p>{item.description}</p>
                 </div>
               </article>

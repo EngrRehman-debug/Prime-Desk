@@ -226,3 +226,37 @@
     margin-left: min(0px, calc(-2.12% + 5.4px));
   }
 }
+
+.logo {
+  width: auto;
+  height: auto;
+  font-size: 46px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.wordmark {
+  aspect-ratio: auto;
+  color: var(--white);
+}
+
+.wordmark svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wordmark text {
+  font-size: 200px;
+  font-weight: 500;
+}
+
+.contactItem a {
+  overflow-wrap: anywhere;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-161);
+}

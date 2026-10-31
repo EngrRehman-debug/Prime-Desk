@@ -1,28 +1,32 @@
-import type { Metadata } from "next";
 import Cta from "@/components/sections/Cta";
-import Faq from "@/components/sections/Faq";
-import Footer from "@/components/sections/Footer";
-import Nav from "@/components/sections/Nav";
-import Pricing from "@/components/sections/Pricing";
+import PageShell from "@/components/sections/PageShell";
 import Services from "@/components/sections/Services";
 import ServicesHero from "@/components/sections/ServicesHero";
+import JsonLd from "@/components/ui/JsonLd";
 import landing from "@/data/landing-page.json";
-import page from "@/data/services-page.json";
+import pages from "@/data/pages.json";
+import { breadcrumbSchema, servicesSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: page.meta.title,
-};
+const page = pages.services;
+
+export const metadata = pageMetadata({
+  title: "Marketing, Web, Brand & Support Services | PrimeDesk",
+  description: page.hero.description,
+  path: "/services",
+  image: "/og/services.jpg",
+});
 
 export default function ServicesPage() {
   return (
-    <main>
-      <Nav content={landing.nav} />
+    <PageShell>
+      <JsonLd data={breadcrumbSchema("Services", "/services")} />
+      {servicesSchema(landing.services.items).map((schema) => (
+        <JsonLd key={schema.name} data={schema} />
+      ))}
       <ServicesHero content={page.hero} />
       <Services content={landing.services} staticUntil1440 />
-      <Faq content={landing.faq} placement="beforePricing" />
-      <Pricing content={landing.pricing} twoColumnsUntil1440 />
-      <Cta content={landing.cta} />
-      <Footer content={landing.footer} />
-    </main>
+      <Cta content={page.closing} />
+    </PageShell>
   );
 }

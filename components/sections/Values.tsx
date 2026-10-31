@@ -22,7 +22,11 @@ function ValueCard({ value }: { value: Value }) {
 }
 
 export default function Values({ content: values, tabletUntil1440 = false }: Props) {
-  const [innovation, collaboration, integrity] = values.items;
+  // With three cards the image column holds one, as in the original layout.
+  const [left, right] =
+    values.items.length === 3
+      ? [values.items.slice(0, 1), values.items.slice(1)]
+      : [values.items.filter((_, index) => index % 2 === 0), values.items.filter((_, index) => index % 2 === 1)];
   return (
     <section className={styles.section} data-tablet-until-1440={tabletUntil1440}>
       <div className={styles.container}>
@@ -35,11 +39,14 @@ export default function Values({ content: values, tabletUntil1440 = false }: Pro
             <div className={styles.image}>
               <Image src={values.image.src} alt={values.image.alt} fill sizes="(max-width: 809px) 100vw, 590px" quality={85} />
             </div>
-            <ValueCard value={innovation} />
+            {left.map((value) => (
+              <ValueCard key={value.title} value={value} />
+            ))}
           </div>
           <div className={styles.column}>
-            <ValueCard value={collaboration} />
-            <ValueCard value={integrity} />
+            {right.map((value) => (
+              <ValueCard key={value.title} value={value} />
+            ))}
           </div>
         </div>
       </div>
