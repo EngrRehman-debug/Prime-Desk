@@ -1,0 +1,60 @@
+{
+  "shared": {
+    "stats": [
+      { "value": "250k+", "label": "Revenue in first 30 days" },
+      { "value": "1.8M+ ", "label": "Reach through content" },
+      { "value": "32%", "label": "Email conversion" },
+      { "value": "4.9-star", "label": "Average rating" }
+    ],
+    "labels": { "client": "Client", "category": "Category", "period": "Work Period", "industry": "Industry" },
+    "category": "Branding",
+    "period": "August 5 – December 2026",
+    "industry": "Retail Industry",
+    "challenge": {
+      "heading": "The Challenge",
+      "paragraphs": [
+        "NovaEdge had strong inventory but weak positioning. Their brand lacked clarity, and their marketing efforts were inconsistent.",
+        "They were generating inquiries, but most leads were low quality, resulting in wasted time and low conversion rates. The key challenge was to attract serious buyers while building credibility in a saturated market."
+      ]
+    },
+    "strategy": {
+      "heading": "Our Strategy",
+      "paragraphs": [
+        "Brand Positioning: Refined their messaging to focus on “premium living with transparency,” making them stand out from typical real estate competitors.",
+        "Visual Rebranding: Redesigned their identity with a clean, modern aesthetic to match high end property expectations.",
+        "Visual Rebranding: Redesigned their identity with a clean, modern aesthetic to match high end property expectations.",
+        "Paid Campaigns: Launched targeted Facebook and Google campaigns focused on location based high value audiences."
+      ]
+    }
+  },
+  "projects": {
+    "alongside": {
+      "title": "Alongside",
+      "tags": ["Visual Identity", "Design"],
+      "description": "A complete visual identity overhaul, including logo design, typography, color palette, and asset creation. The project gave the client a cohesive, that stands out across all platforms.",
+      "client": "Lumina Legal",
+      "image": "/images/work-detail-alongside.webp"
+    },
+    "hypertech": {
+      "title": "Hypertech",
+      "tags": ["Digital Marketing", "ADs"],
+      "description": "A multi channel digital marketing campaign spanning paid social, email nurturing, and search ads. Data driven targeting and weekly creative refreshes helped the client.",
+      "client": "FitFuel Nutrition",
+      "image": "/images/work-detail-hypertech.webp"
+    },
+    "redefine-flow": {
+      "title": "Redefine Flow",
+      "tags": ["Brand Strategy", "Design"],
+      "description": "A deep dive brand strategy project uncovering the client's true positioning, audience insights, and messaging framework. The outcome was a clear brand roadmap.",
+      "client": "Verge Consulting",
+      "image": "/images/work-detail-redefine-flow.webp"
+    },
+    "recap": {
+      "title": "Recap",
+      "tags": ["Media Planning", "Design"],
+      "description": "A strategic media planning project that identified the most effective channels, budgets, and timing for the client's goals. By optimizing ad placements across streaming,",
+      "client": "Harbor Financial Group",
+      "image": "/images/work-detail-recap.webp"
+    }
+  }
+}

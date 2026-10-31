@@ -1,0 +1,169 @@
+.section {
+  padding: 80px 30px;
+  overflow: clip;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+.description {
+  color: var(--gray-115);
+}
+
+.updated {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 16px;
+  font-size: 16px;
+  line-height: 27.2px;
+  color: var(--gray-115);
+}
+
+.updatedLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: 131px;
+}
+
+.separator {
+  color: var(--red);
+}
+
+.note {
+  white-space: nowrap;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding: 56px 0;
+  box-shadow: inset 0 -1px 0 var(--gray-212);
+}
+
+.row h3 {
+  flex: 0 0 488px;
+  font-size: 32px;
+  line-height: 41.6px;
+  font-weight: 500;
+}
+
+.body {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--gray-115);
+}
+
+.text + .text {
+  margin-top: 16px;
+}
+
+.body[data-tight="true"] .text + .text {
+  margin-top: -4px;
+}
+
+.text + .bullet {
+  margin-top: 4px;
+}
+
+.bullet {
+  position: relative;
+  padding-left: 14px;
+}
+
+.bullet::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  background: var(--gray-115);
+}
+
+.cta {
+  margin-top: 16px;
+}
+
+/* Inner pages keep their tablet layout up to 1440px. */
+@media (max-width: 1439.98px) {
+  .section {
+    padding-top: 22px;
+  }
+
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .row {
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .row h3 {
+    flex: 1 1 0;
+    max-width: 488px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section {
+    padding-top: 38px;
+  }
+
+  .row h3 {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .section {
+    padding: 44px 20px 80px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  .row h3 {
+    flex: none;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
+  .body {
+    flex: none;
+  }
+}

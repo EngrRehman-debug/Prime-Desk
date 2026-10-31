@@ -1,0 +1,65 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding: 80px 30px;
+  overflow: clip;
+  text-align: center;
+}
+
+.shape {
+  position: relative;
+  width: 321px;
+  height: 321px;
+  animation: spin 10s linear infinite;
+}
+
+/* The spin starts from 0 when the section enters view. */
+[data-visible="false"] .shape {
+  animation-play-state: paused;
+}
+
+.shape img {
+  object-fit: cover;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.description {
+  color: var(--gray-115);
+}
+
+.button {
+  margin-top: 18px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section {
+    padding: 0 30px 80px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .section {
+    padding: 0 20px 80px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shape {
+    animation: none;
+  }
+}

@@ -1,0 +1,169 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 52px 60px 80px;
+  margin-bottom: 10px;
+}
+
+.eyebrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #000;
+}
+
+.wordmark {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4.81;
+}
+
+.wordmark img {
+  object-fit: cover;
+}
+
+.banner {
+  position: relative;
+  height: 523.6px;
+  padding: 43px 60px 58px;
+  overflow: clip;
+  color: var(--white);
+}
+
+.portrait {
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  width: 192px;
+  height: 61px;
+}
+
+.stat strong {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.stat span {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  height: 29px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+}
+
+.lead {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.description {
+  max-width: 408px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.tags {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 323px;
+}
+
+.tag {
+  display: block;
+  padding: 8px 16px;
+  box-shadow: inset 0 0 0 1px var(--white);
+  border-radius: 1000px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 14px;
+  line-height: 20px;
+  height: 37px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199.98px) {
+  .title {
+    padding: 68px 30px 40px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .title {
+    padding: 64px 20px 60px;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    height: auto;
+    padding: 43px 20px 58px;
+  }
+
+  .content {
+    height: auto;
+    gap: 100px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .lead {
+    flex: none;
+    width: 100%;
+  }
+
+  .description {
+    max-width: none;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tags {
+    justify-content: flex-start;
+  }
+}

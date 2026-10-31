@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  align-items: center;
+  height: 113px;
+  border-bottom: 1px solid var(--gray-212);
+  overflow: clip;
+}
+
+.item {
+  display: flex;
+  flex: none;
+  gap: 8px;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: var(--gray-82);
+  white-space: nowrap;
+}
+
+.slash {
+  color: var(--red);
+}
+
+.line {
+  flex: none;
+  width: 2px;
+  height: 43px;
+  background: var(--gray-212);
+}
+
+@media (max-width: 809.98px) {
+  .item {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+}

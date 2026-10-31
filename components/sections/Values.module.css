@@ -1,0 +1,110 @@
+.section {
+  padding: 80px 30px;
+  overflow: clip;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.description {
+  width: 305px;
+  color: var(--gray-115);
+  text-align: end;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image {
+  position: relative;
+  aspect-ratio: 1.686;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image img {
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  padding: 32px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 27.2px;
+  color: var(--gray-115);
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  .section[data-tablet-until-1440="true"] {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .section {
+    padding: 0 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 56px;
+  }
+
+  .description {
+    width: 100%;
+    text-align: start;
+  }
+
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card {
+    height: 280px;
+    padding: 0;
+  }
+}

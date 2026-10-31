@@ -1,0 +1,88 @@
+.section {
+  padding: 80px 30px;
+  overflow: clip;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  width: 555px;
+  max-width: 100%;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  height: 100%;
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--pill);
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  background: #e0c79c;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text h3 {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 27.2px;
+  color: var(--gray-82);
+}
+
+/* Inner pages keep their tablet layout up to 1440px. */
+@media (max-width: 1439.98px) {
+  .section {
+    padding-top: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 809.98px) {
+  .section {
+    padding: 0 20px 80px;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

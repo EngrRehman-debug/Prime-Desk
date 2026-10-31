@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "eyebrow": "About Us",
+    "statement": "We’re not just a marketing agency—we’re a growth partner. We help brands find their position, express it clearly, and scale it through smart execution. Every decision we make is rooted in strategy, driven by data, and designed to create real impact."
+  },
+  "impact": {
+    "heading": "Our Impact",
+    "description": "From campaigns that broke records to brands that found their voice — our results speak louder than words.",
+    "review": {
+      "quote": "We see every project as more than just marketing. It's a partnership founded on trust, shaped by creativity, and powered by ambition. ",
+      "name": "Sarah JenkinS",
+      "role": "Director of Strategy",
+      "avatar": "/images/about-sarah-jenkins.webp"
+    },
+    "stats": [
+      { "end": 220, "suffix": "+", "label": "Satisfied Clients" },
+      { "end": 500, "suffix": "M+", "label": "Impressions Delivered" },
+      { "end": 80, "suffix": "%", "label": "Average engagement growth" },
+      { "end": 218, "suffix": "+", "label": "Successful Projects" }
+    ]
+  },
+  "team": {
+    "heading": "The People Behind the Work",
+    "description": "A team of strategists, designers, and marketers working together to move brands forward.",
+    "join": {
+      "eyebrow": "JOIN THE TEAM",
+      "title": "Want to shape the future of marketing?",
+      "description": "Join us and create bold innovation creative work that changes the business",
+      "cta": { "label": "See Open Positions", "href": "/contact" }
+    },
+    "socials": [
+      { "icon": "/images/icon-facebook.svg", "label": "Facebook", "href": "https://www.facebook.com/" },
+      { "icon": "/images/icon-instagram.svg", "label": "Instagram", "href": "https://www.instagram.com/" },
+      { "icon": "/images/icon-linkedin.svg", "label": "LinkedIn", "href": "https://www.linkedin.com/" }
+    ],
+    "members": [
+      { "name": "Ethan Carter", "role": "Founder & Strategy Lead", "image": "/images/team-ethan-carter.webp" },
+      { "name": "Olivia Bennett", "role": "Creative Director", "image": "/images/team-olivia-bennett.webp" },
+      { "name": "Noah Mitchell", "role": "Content & Brand Manager", "image": "/images/testimonial-ava-morgan.webp" },
+      { "name": "Sophia Reynolds", "role": "Performance Marketing Lead", "image": "/images/team-sophia-reynolds.webp" },
+      { "name": "Sarah Reynolds", "role": "Media Planner", "image": "/images/team-sarah-reynolds.webp" }
+    ]
+  },
+  "awards": {
+    "heading": "Awards",
+    "description": "Award we got for our excellency",
+    "background": "/images/testimonial-background.webp",
+    "items": [
+      { "number": "[01]", "year": "2025", "title": "CSS Design Awards", "image": "/images/award-css-design.webp" },
+      { "number": "[02]", "year": "2025", "title": "Clio Awards (Digital & Interactive)", "image": "/images/award-clio.webp" },
+      { "number": "[03]", "year": "2025", "title": "Web Marketing Association’s Web Award", "image": "/images/award-web-marketing.webp" },
+      { "number": "[04]", "year": "2025", "title": "The Communicator Awards", "image": "/images/award-communicator.webp" },
+      { "number": "[05]", "year": "2025", "title": "Institute of Promotional Marketing (IPM) Awards", "image": "/images/award-ipm.webp" }
+    ]
+  }
+}

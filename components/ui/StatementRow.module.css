@@ -1,0 +1,50 @@
+.row {
+  display: flex;
+  gap: 55px;
+}
+
+.eyebrow {
+  flex: none;
+  width: 285px;
+  color: var(--gray-115);
+}
+
+.statement {
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+/* The original switches this row at 1440px, earlier than the shared 1200px breakpoint. */
+@media (max-width: 1439.98px) {
+  .row {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .eyebrow {
+    width: 180px;
+  }
+
+  .statement {
+    flex: 0 0 var(--statement-width, 74%);
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .row {
+    flex-direction: column;
+    gap: var(--statement-row-gap, 24px);
+    text-align: center;
+  }
+
+  .eyebrow {
+    width: 100%;
+  }
+
+  .statement {
+    flex: none;
+  }
+}

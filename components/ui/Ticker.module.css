@@ -1,0 +1,29 @@
+.viewport {
+  width: 100%;
+  overflow: clip;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: ticker 30s linear infinite;
+  will-change: transform;
+}
+
+.group {
+  display: flex;
+  flex: none;
+  align-items: center;
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

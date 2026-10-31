@@ -1,0 +1,190 @@
+.section {
+  padding: 80px 30px;
+  overflow: clip;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.description {
+  width: 397px;
+  max-width: 100%;
+  color: var(--gray-115);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px 20px;
+}
+
+/* The first row leaves its last column empty, as in the original grid. */
+.joinSlot,
+.memberSlot:nth-child(2),
+.memberSlot:nth-child(3) {
+  grid-row: 1;
+}
+
+.memberSlot:nth-child(4) {
+  grid-column: 2;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  height: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--pill);
+}
+
+.joinText {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.joinEyebrow {
+  font-size: 14px;
+  line-height: 19.6px;
+  font-weight: 600;
+  color: var(--gray-115);
+}
+
+.join h3,
+.member h3 {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 600;
+}
+
+.joinDescription,
+.role {
+  font-size: 16px;
+  line-height: 27.2px;
+  color: var(--gray-64);
+}
+
+.photo {
+  position: relative;
+  aspect-ratio: 285 / 450;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.photo img {
+  object-fit: cover;
+}
+
+.blur {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-spring);
+}
+
+.socials {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(88px);
+  transition: opacity 0.4s var(--ease-spring), transform 0.4s var(--ease-spring);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background: var(--ink);
+}
+
+.member h3 {
+  margin-bottom: 2px;
+}
+
+@media (hover: hover) and (min-width: 1440px) {
+  .member:hover .blur {
+    opacity: 1;
+  }
+
+  .member:hover .socials {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Inner pages keep their tablet layout up to 1440px. */
+@media (max-width: 1439.98px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .joinSlot,
+  .memberSlot:nth-child(2),
+  .memberSlot:nth-child(3),
+  .memberSlot:nth-child(4) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  /* Below 1440px the social links stay visible on every photo. */
+  .blur {
+    display: none;
+  }
+
+  .socials {
+    right: 15px;
+    bottom: 15px;
+    opacity: 1;
+    transform: none;
+  }
+
+  .social {
+    background: var(--red);
+  }
+}
+
+@media (max-width: 809.98px) {
+  .section {
+    padding: 80px 20px;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .header {
+    align-items: stretch;
+    margin-bottom: 40px;
+  }
+
+  .description {
+    width: 100%;
+    max-width: 397px;
+    margin: 0 auto;
+  }
+}

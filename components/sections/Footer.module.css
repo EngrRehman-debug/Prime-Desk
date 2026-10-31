@@ -1,0 +1,228 @@
+.footer {
+  padding: 80px 30px 30px;
+  background: var(--ink);
+  color: var(--white);
+  overflow: clip;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 387px;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 264px;
+  height: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 447px;
+}
+
+.formTitle {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.field {
+  position: relative;
+  height: 60px;
+  border-radius: 100px;
+  background: var(--gray-64);
+}
+
+.field input {
+  width: 100%;
+  height: 100%;
+  padding: 0 170px 0 20px;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  color: var(--white);
+  font-size: 16px;
+  outline: none;
+}
+
+.field input::placeholder {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.submit {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 155px;
+}
+
+.note {
+  font-size: 16px;
+  line-height: 27.2px;
+  color: var(--gray-115);
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columnTitle {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  color: var(--gray-161);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+.list a,
+.contactItem a {
+  transition: color 0.6s cubic-bezier(0.44, 0, 0.56, 1);
+}
+
+.list a:hover,
+.contactItem a:hover {
+  color: var(--red);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactItem {
+  display: flex;
+  gap: 10px;
+  height: 42.8px;
+}
+
+.contactItem a {
+  display: block;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+.contactItem p {
+  font-size: 12px;
+  line-height: 15.6px;
+  color: var(--gray-212);
+}
+
+.wordmark {
+  position: relative;
+  aspect-ratio: 6.162;
+}
+
+.wordmark img {
+  object-fit: cover;
+}
+
+@media (max-width: 1199.98px) {
+  .brand p {
+    max-width: 355px;
+  }
+
+  .brand {
+    flex: none;
+  }
+
+  .form {
+    flex: 0 1 447px;
+    min-width: 0;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .footer {
+    padding: 80px 20px 30px;
+  }
+
+  .container {
+    gap: 40px;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .brand,
+  .form {
+    flex: none;
+    width: 100%;
+  }
+
+  .brand p {
+    max-width: none;
+  }
+
+  .logo {
+    width: 200px;
+    height: 30.3px;
+  }
+
+  .columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 10px;
+    width: calc(95.76% + 10.8px);
+    margin: 0 auto -8px;
+  }
+
+  .hideOnPhone {
+    display: none;
+  }
+
+  .columnTitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contactColumn {
+    grid-column: 1 / -1;
+    margin-left: min(0px, calc(-2.12% + 5.4px));
+  }
+}

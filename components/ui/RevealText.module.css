@@ -1,0 +1,13 @@
+.text {
+  font-weight: 700;
+  white-space: pre-wrap;
+}
+
+.character {
+  color: var(--gray-161);
+  transition: color 0.2s ease-out;
+}
+
+.character[data-on="true"] {
+  color: var(--ink);
+}

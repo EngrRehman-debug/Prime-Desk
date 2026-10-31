@@ -1,0 +1,154 @@
+:root {
+  --bg: #f3efe8;
+  --ink: #0a0a0a;
+  --red: #ff4c39;
+  --white: #ffffff;
+  --gray-23: #171717;
+  --gray-38: #262626;
+  --gray-64: #404040;
+  --gray-82: #525252;
+  --gray-115: #737373;
+  --gray-161: #a1a1a1;
+  --gray-212: #d4d4d4;
+  --card: #fbfaf9;
+  --pill: #eae0cf;
+
+  /* Fallbacks for browsers without linear(); the exact springs are defined below. */
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.2, 0.64, 1);
+  --ease-enter: cubic-bezier(0.25, 0.8, 0.3, 1);
+  --ease-nav: cubic-bezier(0.25, 0.8, 0.3, 1);
+}
+
+@supports (transition-timing-function: linear(0, 1)) {
+  :root {
+    /* Framer spring: bounce .1, duration .6s. */
+    --ease-bounce: linear(0 0.0%, 0.09 2.3%, 0.57 15.6%, 0.86 27.4%, 0.99 40.7%, 1.015 53.0%, 1.011 66.0%, 1.005 79.0%, 1.001 91.6%, 1 100.0%);
+    --ease-spring: linear(0 0.0%, 0.0047 1.0%, 0.0386 3.0%, 0.1199 5.7%, 0.2467 9.0%, 0.4014 12.9%, 0.5601 17.2%, 0.7025 22.1%, 0.816 27.3%, 0.897 33.0%, 0.949 39.0%, 0.9787 45.5%, 0.9935 52.3%, 0.9996 59.4%, 1.0014 66.9%, 1.0014 74.7%, 1.0009 82.8%, 1.0005 91.3%, 1 100.0%);
+    /* Framer in-view spring: damping 80, stiffness 400, mass 1. */
+    --ease-enter: linear(0 0.0%, 0.0135 0.7%, 0.0825 2.2%, 0.1932 4.1%, 0.317 6.5%, 0.4381 9.3%, 0.5493 12.5%, 0.6468 16.0%, 0.7292 19.8%, 0.7966 23.9%, 0.8503 28.3%, 0.8918 33.0%, 0.9233 37.9%, 0.9465 43.1%, 0.9634 48.5%, 0.9753 54.2%, 0.9836 60.1%, 0.9893 66.2%, 0.9931 72.5%, 0.9956 79.1%, 0.9973 85.9%, 0.9983 92.8%, 1 100.0%);
+    /* Framer nav appear spring: damping 60, stiffness 400, mass 1. */
+    --ease-nav: linear(0 0.0%, 0.0204 1.2%, 0.1264 3.6%, 0.2944 6.9%, 0.4693 10.9%, 0.6214 15.6%, 0.7416 20.8%, 0.8307 26.6%, 0.8932 33.0%, 0.935 39.8%, 0.9618 47.1%, 0.9782 54.9%, 0.988 63.1%, 0.9936 71.7%, 0.9967 80.8%, 0.9983 90.2%, 1 100.0%);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-urbanist), "Urbanist Placeholder", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1.3s var(--ease-enter), transform 1.3s var(--ease-enter);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.reveal-soft {
+  transition-duration: 0.95s;
+  transition-timing-function: var(--ease-nav);
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Load-in entrance: Framer appear spring with damping 60, stiffness 400. */
+.appear {
+  animation: appearRise 0.95s var(--ease-nav) backwards;
+  animation-delay: var(--appear-delay, 0s);
+}
+
+@keyframes appearRise {
+  from {
+    opacity: 0.001;
+    transform: translateY(60px);
+  }
+}
+
+.h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.body18 {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@media (max-width: 1199.98px) {
+  .h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .h1 {
+    font-size: 36px;
+  }
+
+  .body18 {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .appear {
+    animation: none;
+  }
+}

@@ -1,0 +1,296 @@
+.nav {
+  position: relative;
+  z-index: 20;
+  height: 108px;
+  padding: 28px 30px;
+  background: var(--bg);
+  animation: navIn 0.95s var(--ease-nav) backwards;
+}
+
+@keyframes navIn {
+  from {
+    opacity: 0.001;
+    transform: translateY(-80px);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1660px;
+  height: 52px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  flex: none;
+  width: 161px;
+  height: 24px;
+  filter: invert(1);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.link,
+.allPages {
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: color 0.5s var(--ease-spring);
+}
+
+.link:hover,
+.allPages:hover,
+.allPages[data-open="true"] {
+  color: var(--red);
+}
+
+.allPages {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.allPages svg {
+  transition: transform 0.3s ease;
+}
+
+.allPages[data-open="true"] svg {
+  transform: rotate(180deg);
+}
+
+.cta {
+  flex: none;
+}
+
+.menuButton {
+  display: none;
+}
+
+.dropdown {
+  position: absolute;
+  top: 110px;
+  left: max(0px, calc(50% - 650px));
+  display: grid;
+  grid-template-columns: 369px 368px 375px auto;
+  width: 1370px;
+  max-width: calc(100% - max(0px, 50% - 650px));
+  padding: 32px;
+  border-radius: 32px;
+  background: var(--white);
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s var(--ease-spring) 0.05s, transform 0.35s var(--ease-spring) 0.05s, visibility 0.35s 0.05s;
+}
+
+.dropdown[data-open="true"] {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdownGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.groupTitle {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  color: var(--gray-161);
+}
+
+.dropdownGroup .groupTitle {
+  margin-bottom: 2px;
+}
+
+.dropdownLink {
+  font-size: 16px;
+  line-height: 27.2px;
+  color: var(--gray-23);
+  transition: color 0.3s ease;
+}
+
+.dropdownLink:hover,
+.menuLink:hover {
+  color: var(--red);
+}
+
+.menu {
+  display: none;
+}
+
+.desktopOnly {
+  display: inline;
+}
+
+@media (max-width: 1199.98px) {
+  .nav {
+    height: 92px;
+    padding: 20px 30px;
+  }
+
+  .links {
+    gap: 20px;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .dropdown {
+    top: 92px;
+    left: calc(50% - 378px);
+    grid-template-columns: 162px 162px 168px auto;
+    width: 750px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .nav {
+    height: 56px;
+    padding: 0;
+    background: transparent;
+  }
+
+  .container {
+    height: 56px;
+    padding: 16px 20px;
+    background: var(--bg);
+    position: relative;
+    z-index: 2;
+  }
+
+  .links,
+  .cta,
+  .dropdown {
+    display: none;
+  }
+
+  .menuButton {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: var(--ink);
+    cursor: pointer;
+  }
+
+  .menuButton span {
+    position: absolute;
+    left: 3px;
+    width: 18px;
+    height: 2px;
+    border-radius: 100px;
+    background: var(--white);
+    transition: transform 0.3s ease, opacity 0.2s ease, top 0.3s ease;
+  }
+
+  .menuButton span:nth-child(1) {
+    top: 5px;
+  }
+
+  .menuButton span:nth-child(2) {
+    top: 11px;
+  }
+
+  .menuButton span:nth-child(3) {
+    top: 17px;
+  }
+
+  .menuButton[data-open="true"] span:nth-child(1) {
+    top: 11px;
+    transform: rotate(45deg);
+  }
+
+  .menuButton[data-open="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menuButton[data-open="true"] span:nth-child(3) {
+    top: 11px;
+    transform: rotate(-45deg);
+  }
+
+  .menu {
+    position: fixed;
+    inset: 56px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 21px 20px 24px;
+    background: var(--white);
+    overflow-y: auto;
+    transform: translateY(-300px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* The menu drops in with a slight bounce and closes instantly. */
+  .menu[data-open="true"] {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.39s var(--ease-bounce) 0.11s, transform 0.39s var(--ease-bounce) 0.11s;
+  }
+
+  .menuGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .groupTitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .menuGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 9px;
+  }
+
+  .menuLink {
+    font-size: 16px;
+    line-height: 27.2px;
+    color: var(--gray-23);
+  }
+
+  .menuGroup[data-group="CMS Pages"] .menuGrid {
+    min-height: 62.4px;
+    align-content: start;
+  }
+
+  .menuGroup[data-group="Utility Pages"] .menuGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu > a {
+    margin-top: 8px;
+    flex: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav {
+    animation: none;
+  }
+}

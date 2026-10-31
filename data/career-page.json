@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "heading": "Build Work That Actually Matters",
+    "description": "Join a team focused on strategy, creativity, and real impact—not just deliverables.",
+    "cta": { "label": "View Open Positions", "href": "/contact" },
+    "eyebrow": "Career at GrowthLab",
+    "statement": "At GrowthLab, we believe the best work happens when creativity meets purpose. We are a full service marketing agency where collaboration fuels innovation, and every team member plays a vital role in helping brands grow with intention and impact. From strategic storytelling to performance driven campaigns, we blend insight with execution—turning ideas into measurable results for the brands we serve."
+  },
+  "positions": {
+    "heading": "Open Positions",
+    "description": "Find a role where your skills can create real impact.",
+    "locationLabel": "Location:",
+    "applyLabel": "Apply Now",
+    "href": "/contact",
+    "details": ["On site", "Full Time", "$20,000-$50,000 ", "Last Date: 19 April, 2026"],
+    "roles": ["UI/UX Designer", "Content & Creative Strategist", "Marketing Analytics Specialist", "Growth Strategist", "Senior Product Designer"]
+  },
+  "stories": {
+    "heading": "Hear From Our Employees",
+    "description": "See what our users are truly accomplishing with honest, and project based reviews",
+    "texture": "/images/career-story-texture.webp",
+    "avatars": ["/images/career-avatar-1.webp", "/images/career-avatar-2.webp", "/images/career-avatar-3.webp"],
+    "playIcon": "/images/icon-play.svg",
+    "playLabel": " PLAY THIS VIDEO • PLAY THIS VIDO •",
+    "videoUrl": "https://www.youtube.com/embed/VCPGMjCW0is?si=84GsSgfm1p215Cq9&iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=1",
+    "items": [
+      {
+        "quote": "From day one, I could feel the difference. The leadership team delivered a clear vision that immediately focused all of us. The growth in our client engagement metrics was noticeable within my first 60 days, ",
+        "name": "Sarah JenkinS",
+        "role": "Director of Strategy",
+        "image": "/images/about-sarah-jenkins.webp"
+      },
+      {
+        "quote": "What drew me here was the focus on data driven work. What made me stay is the culture. The leadership team actually invests in the tools and training we need to do our best work. ",
+        "name": "Alisha Patel",
+        "role": "Head of Paid Media",
+        "image": "/images/career-story-alisha.webp"
+      },
+      {
+        "quote": "From day one, I could feel the difference. The leadership team delivered a clear vision that immediately focused all of us. The growth in our client engagement metrics was noticeable within my first 60 days, ",
+        "name": "Sarah JenkinS",
+        "role": "Director of Strategy",
+        "image": "/images/career-story-third.webp"
+      }
+    ]
+  }
+}

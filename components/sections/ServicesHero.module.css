@@ -1,0 +1,207 @@
+.section {
+  padding: 80px 30px;
+  overflow: clip;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+.description {
+  color: var(--gray-115);
+}
+
+.summary {
+  margin-bottom: 56px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.cardSlot {
+  min-width: 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  height: 485.6px;
+  padding: 32px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.card h3 {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 600;
+}
+
+.imageCard {
+  color: var(--white);
+}
+
+.cardImage {
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.brandImage {
+  object-position: 50% 50%;
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+
+.cardTop,
+.cardBottom {
+  position: relative;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTopEnd {
+  justify-content: flex-end;
+}
+
+.iconBadge {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background: var(--white);
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardBottom p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.counter {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.tagCard {
+  background: var(--pill);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 14px 20px;
+  border-radius: 1000px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* This hero switches to its two-column layout at 1440px, earlier than the shared 1200px nav breakpoint. */
+@media (max-width: 1439.98px) {
+  .section {
+    padding: 22px 30px 0;
+  }
+
+  .intro {
+    margin-bottom: 80px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+  }
+
+  .tagSlot {
+    grid-column: 1 / -1;
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .tagCard {
+    gap: 130px;
+  }
+
+  .brandImage {
+    object-position: 50% 0%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section {
+    padding-top: 38px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .section {
+    padding: 44px 20px 0;
+  }
+
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .summary {
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .card {
+    height: auto;
+    padding: 24px;
+  }
+
+  .tagCard {
+    gap: 40px;
+  }
+
+  .brandImage {
+    object-position: 100% 50%;
+  }
+}
