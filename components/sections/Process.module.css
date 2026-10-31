@@ -184,9 +184,24 @@
   }
 }
 
-/* The document's step text differs in length, so cards share one height. */
+/* The document's step text differs in length, so cards share one height and
+   every text block reserves the longest step's space, keeping headings on one line. */
+.text {
+  min-height: 150px;
+}
+
 @media (min-width: 1200px) {
   .card {
     min-height: 480px;
+  }
+
+  .text {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .text {
+    min-height: 140px;
   }
 }

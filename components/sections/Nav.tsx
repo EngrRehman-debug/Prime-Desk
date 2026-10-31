@@ -44,15 +44,18 @@ export default function Nav({ content: nav }: Props) {
       </div>
 
       <div className={styles.menu} data-open={menuOpen} aria-hidden={!menuOpen}>
-        <div className={styles.menuGroup}>
-          <div className={styles.menuGrid}>
-            {nav.links.map((link) => (
-              <a key={link.label} href={link.href} className={styles.menuLink} tabIndex={menuOpen ? 0 : -1}>
-                {link.label}
-              </a>
-            ))}
+        {nav.menuGroups.map((group) => (
+          <div key={group.title} className={styles.menuGroup}>
+            <p className={styles.groupTitle}>{group.title}</p>
+            <div className={styles.menuGrid}>
+              {group.links.map((link) => (
+                <a key={link.label} href={link.href} className={styles.menuLink} tabIndex={menuOpen ? 0 : -1}>
+                  {link.label}
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
+        ))}
         <Button href={nav.cta.href} label={nav.cta.label} block />
       </div>
     </nav>
