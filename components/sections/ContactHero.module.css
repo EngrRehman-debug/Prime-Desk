@@ -121,7 +121,7 @@
   height: 52px;
   border: 0;
   border-radius: 100px;
-  background: var(--red);
+  background: var(--accent);
   color: var(--white);
   transition:
     background-color 0.2s cubic-bezier(0.44, 0, 0.56, 1) 0.03s,
@@ -250,7 +250,7 @@
 .option input {
   width: 18px;
   height: 18px;
-  accent-color: var(--red);
+  accent-color: var(--accent);
 }
 
 .trap {

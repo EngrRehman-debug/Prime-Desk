@@ -40,7 +40,7 @@
 }
 
 .separator {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .note {

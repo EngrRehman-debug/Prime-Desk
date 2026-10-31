@@ -60,9 +60,9 @@ export default function Footer({ content: footer }: Props) {
           <svg viewBox="0 0 1000 162" aria-hidden="true">
             <defs>
               <linearGradient id="footer-wordmark-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="162">
-                <stop offset="0" stopColor="#ff4c39" />
-                <stop offset="0.45" stopColor="#a8301f" />
-                <stop offset="1" stopColor="#0a0a0a" />
+                <stop offset="0" stopColor="#0066fa" />
+                <stop offset="0.45" stopColor="#0b3fa8" />
+                <stop offset="1" stopColor="#192033" />
               </linearGradient>
             </defs>
             <text x="0" y="150" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="url(#footer-wordmark-fade)">

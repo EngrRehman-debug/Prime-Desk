@@ -66,8 +66,8 @@
 }
 
 .red {
-  --fill: var(--red);
-  --border: var(--red);
+  --fill: var(--accent);
+  --border: var(--accent);
   --label: var(--white);
   --label-hover: var(--ink);
   --fill-hover: var(--bg);
@@ -75,8 +75,8 @@
 }
 
 .work {
-  --fill: var(--red);
-  --border: var(--red);
+  --fill: var(--accent);
+  --border: var(--accent);
   --label: var(--white);
   --label-hover: var(--ink);
   --fill-hover: rgb(251, 250, 249);
@@ -84,8 +84,8 @@
 }
 
 .apply {
-  --fill: var(--red);
-  --border: var(--red);
+  --fill: var(--accent);
+  --border: var(--accent);
   --label: var(--white);
   --label-hover: var(--ink);
   --fill-hover: var(--bg);
@@ -94,11 +94,11 @@
 
 .white {
   --fill: var(--white);
-  --border: var(--red);
-  --label: var(--red);
-  --label-hover: var(--red);
+  --border: var(--accent);
+  --label: var(--accent);
+  --label-hover: var(--accent);
   --fill-hover: var(--white);
-  --border-hover: var(--red);
+  --border-hover: var(--accent);
 }
 
 .outline {
@@ -115,13 +115,13 @@
   --border: var(--gray-115);
   --label: var(--ink);
   --label-hover: var(--white);
-  --fill-hover: var(--red);
-  --border-hover: var(--red);
+  --fill-hover: var(--accent);
+  --border-hover: var(--accent);
 }
 
 .planDark {
-  --fill: var(--red);
-  --border: var(--red);
+  --fill: var(--accent);
+  --border: var(--accent);
   --label: var(--white);
   --label-hover: var(--ink);
   --fill-hover: var(--white);
@@ -133,13 +133,13 @@
   --border: var(--ink);
   --label: var(--white);
   --label-hover: var(--white);
-  --fill-hover: var(--red);
-  --border-hover: var(--red);
+  --fill-hover: var(--accent);
+  --border-hover: var(--accent);
 }
 
 .submit {
-  --fill: var(--red);
-  --border: var(--red);
+  --fill: var(--accent);
+  --border: var(--accent);
   --label: var(--white);
   --label-hover: var(--ink);
   --fill-hover: var(--white);

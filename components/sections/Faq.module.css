@@ -71,7 +71,7 @@
 }
 
 .item[data-open="true"] {
-  background: var(--red);
+  background: var(--accent);
   color: var(--white);
 }
 

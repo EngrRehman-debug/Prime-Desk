@@ -205,3 +205,7 @@
     min-height: 140px;
   }
 }
+
+.description {
+  color: var(--gray-212);
+}

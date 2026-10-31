@@ -128,7 +128,7 @@
 .tag {
   padding: 14px 20px;
   border-radius: 1000px;
-  background: var(--red);
+  background: var(--accent);
   color: var(--white);
   font-size: 16px;
   line-height: 24px;

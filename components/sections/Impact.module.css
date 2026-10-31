@@ -37,7 +37,7 @@
   height: 500px;
   padding: 32px;
   border-radius: 24px;
-  background: var(--red);
+  background: var(--accent);
   color: var(--white);
 }
 
@@ -173,7 +173,7 @@
   height: 58px;
   border-radius: 100%;
   background: var(--white);
-  color: var(--red);
+  color: var(--accent);
   font-size: 20px;
   font-weight: 700;
 }

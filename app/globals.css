@@ -1,17 +1,17 @@
 :root {
-  --bg: #f3efe8;
-  --ink: #0a0a0a;
-  --red: #ff4c39;
+  --bg: #f5f2ed;
+  --ink: #192033;
+  --accent: #0066fa;
   --white: #ffffff;
-  --gray-23: #171717;
+  --gray-23: #192033;
   --gray-38: #262626;
   --gray-64: #404040;
   --gray-82: #525252;
-  --gray-115: #737373;
+  --gray-115: #5e6475;
   --gray-161: #a1a1a1;
   --gray-212: #d4d4d4;
   --card: #fbfaf9;
-  --pill: #eae0cf;
+  --pill: #e9e5dd;
 
   /* Fallbacks for browsers without linear(); the exact springs are defined below. */
   --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
